@@ -1,3 +1,10 @@
+### 0.4.4: 1 June 2025
+* Add support for ES6+ via terser.
+* Update dependencies
+  * [terser](https://github.com/terser-js/terser) v5.40.0
+  * [clean-css](https://github.com/jakubpawlowicz/clean-css) v5.3.3
+  * [html-minifier](http://kangax.github.io/html-minifier/) v4.0.0
+
 ### 0.4.3: 28 Mar 2019
 * Remove hardcoded test in production code (Thanks @pnolin)
 

@@ -81,7 +81,7 @@ function activate(context) {
 		if (isJS) {
 			let opts = settings.js;
 			try {
-				let results = minjs.minify(data, opts);
+				results = minjs.minify_sync(data, opts);
 				if(results.error) {
 					throw results.error;
 				}
@@ -155,7 +155,7 @@ function activate(context) {
 					file => new Promise(res => fs.readFile(file, 'utf8', (e, data) => {
 						res(data || "");
 					})))).then(data => {
-					let results = minjs.minify(data, opts);
+					let results = minjs.minify_sync(data, opts);
 					if ( results.error) { throw results.error; }
 					sendFileOut(outName, results.code, {
 						files: files.length
