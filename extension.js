@@ -81,13 +81,12 @@ function activate(context) {
 		if (isJS) {
 			let opts = settings.js;
 			try {
-				results = minjs.minify_sync(data, opts);
-				if(results.error) {
-					throw results.error;
-				}
-				sendFileOut(outName, results.code, {
-					length: data.length
-				});
+				let input = typeof data === 'string' ? data : String(data);
+        let results = minjs.minify_sync(input, opts);
+        if (results.error) throw results.error;
+        sendFileOut(outName, results.code, {
+          length: data.length
+        });
 			} catch (e) {
 				vscode.window.setStatusBarMessage("Minify failed: " + e.message, 5000);
 			}
