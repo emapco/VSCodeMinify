@@ -1,3 +1,7 @@
+### 0.5.1: 15 July 2025
+* Update dependencies
+  * [terser](https://github.com/terser-js/terser) v5.43.1
+
 ### 0.5.0: 1 June 2025
 * Add support for ES6+ via terser.
 * Update dependencies

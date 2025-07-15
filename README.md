@@ -1,9 +1,10 @@
 # minify for VS Code
 
 Minify your js, css and html files to save transmit bandwidth. Calls each of the minifiers directly, allowing settings to be passed:
-* **JS:** [terser](https://github.com/terser-js/terser) v5.40.0 - Supports ES6+
-* **CSS:** [clean-css](https://github.com/jakubpawlowicz/clean-css) v5.3.31
-* **HTML:** [html-minifier](http://kangax.github.io/html-minifier/) v4.0.0
+
+- **JS:** [terser](https://github.com/terser-js/terser) v5.43.1 - Supports ES6+
+- **CSS:** [clean-css](https://github.com/jakubpawlowicz/clean-css) v5.3.31
+- **HTML:** [html-minifier](http://kangax.github.io/html-minifier/) v4.0.0
 
 Run the file minifier with **F1** `Minify`.
 
@@ -114,6 +115,6 @@ Optionally runs minify on save when a matching minified file (and/or directory) 
 
 `minifiy.css.root` accepts "`${workspaceRoot}`/some/path" to define the internal `@import` absolute root.
 
-Since `html-minifier` also uses `clean-css` and `terser`, setting `minifyJS` or `minifyCSS` to **`true`** will embed the settings you have supplied for those minifiers automatically. You can provide your own settings as an object if you want some different methods to be used.
+Since `html-minifier` uses `clean-css`, setting `minifyCSS` to **`true`** will embed the settings you have supplied for those minifiers automatically. You can provide your own settings as an object if you want some different methods to be used.
 
 Like [beautify for VS Code](https://marketplace.visualstudio.com/items/HookyQR.beautify), minify accepts an array for file extension that you will accept minification of under `minify.JSfiles`, `minify.CSSfiles`, and `minify.HTMLfiles`.
