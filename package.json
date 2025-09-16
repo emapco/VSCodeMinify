@@ -1,8 +1,8 @@
 {
   "name": "nu-minify",
   "displayName": "Nu-Minify",
-  "description": "Minify for VS Code.\nMinify with command, and (optionally) re-minify on save. HookyQR.minify fork with ES6+ support.",
-  "version": "0.5.1",
+  "description": "Minify for VS Code. Minify with command, and (optionally) re-minify on save. HookyQR.minify fork with ES6+ support.",
+  "version": "0.5.2",
   "publisher": "emapco",
   "engines": {
     "vscode": "^1.6.0"
@@ -669,7 +669,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "terser": "^5.43.1",
+    "terser": "^5.44.0",
     "clean-css": "^5.3.3",
     "html-minifier": "^4.0.0"
   },

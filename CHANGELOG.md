@@ -1,3 +1,7 @@
+### 0.5.2: 15 September 2025
+* Update dependencies
+  * [terser](https://github.com/terser-js/terser) v5.44.0
+
 ### 0.5.1: 15 July 2025
 * Update dependencies
   * [terser](https://github.com/terser-js/terser) v5.43.1

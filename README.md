@@ -2,8 +2,8 @@
 
 Minify your js, css and html files to save transmit bandwidth. Calls each of the minifiers directly, allowing settings to be passed:
 
-- **JS:** [terser](https://github.com/terser-js/terser) v5.43.1 - Supports ES6+
-- **CSS:** [clean-css](https://github.com/jakubpawlowicz/clean-css) v5.3.31
+- **JS:** [terser](https://github.com/terser-js/terser) v5.44.0 - Supports ES6+
+- **CSS:** [clean-css](https://github.com/jakubpawlowicz/clean-css) v5.3.3
 - **HTML:** [html-minifier](http://kangax.github.io/html-minifier/) v4.0.0
 
 Run the file minifier with **F1** `Minify`.
